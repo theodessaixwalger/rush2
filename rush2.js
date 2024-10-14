@@ -58,7 +58,6 @@ function displayVisibleCount(count) {
     countElement.id = "visible-count";
     document.querySelector('main').insertBefore(countElement, document.getElementById("container2"));
   }
-  countElement.textContent = count > 0 ? `${count} produit(s) visible(s)` : "Aucun produit trouvé.";
 }
 
 document.querySelectorAll('.dropdown-content a').forEach(link => {
