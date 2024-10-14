@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Website</title>
+  </head>
+  <body>
+    <header>
+      <div id="container">
+        <ul class="menu">
+          <li><a class="menuItem" href="#">Home</a></li>
+          <li><a class="menuItem" href="#">Shop</a></li>
+          <li><a class="menuItem" href="#">Magazine</a></li>
+          <li><a class="menuItem" href="#">Login</a></li>
+        </ul>
+        <button class="hamburger">
+          <img src="images/menu.jpg" />
+        </button>
+        <div id="home">
+          <a href=""><p>HOME</p></a>
+        </div>
+        <div id="shop">
+          <a href=""><p>SHOP</p></a>
+        </div>
+        <div id="magazine">
+          <a href=""><p>MAGAZINE</p></a>
+        </div>
+        <div id="cart">
+          <a href=""><img src="images/cart.png" /></a>
+        </div>
+        <div id="login">
+          <a href=""><p>LOGIN</p></a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div id="search">
+        <div id="loupe">
+          <img src="images/loupe.png" alt="Logo de Recherche" />
+        </div>
+        <form action="">
+          <div class="input-field">
+            <input id="name" type="text" />
+          </div>
+        </form>
+        <div class="filter-container">
+          <div class="dropdown">
+            <button class="dropbtn">
+              Best match <span class="arrow">▼</span>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Best match</a>
+              <a href="#">Newest</a>
+              <a href="#">Oldest</a>
+              <a href="#">Most Popular</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="container2">
+        <div id="leftfiltre">
+          <p>FILTER BY</p>
+          <ul>
+            <li>
+              <div class="filter-container2">
+                <div class="dropdown">
+                  <button class="dropbtn">
+                    Collection <span class="arrow">▼</span>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="#" data-filter="collection">Inside</a>
+                    <a href="#" data-filter="collection">Outside</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="filter-container2">
+                <div class="dropdown">
+                  <button class="dropbtn">
+                    Color <span class="arrow">▼</span>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="#" data-filter="color">White</a>
+                    <a href="#" data-filter="color">Yellow</a>
+                    <a href="#" data-filter="color">Brown</a>
+                    <a href="#" data-filter="color">Grey</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <div class="filter-container2">
+                <div class="dropdown">
+                  <button class="dropbtn">
+                    Category <span class="arrow">▼</span>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="#" data-filter="category">LOUNGE</a>
+                    <a href="#" data-filter="category">TABLE & CHAIRS</a>
+                    <a href="#" data-filter="category">SIDE TABLE</a>
+                    <a href="#" data-filter="category">SHELVES</a>
+                    <a href="#" data-filter="category">CHAIR</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <div class="filter">
+                <label for="price-range">Price Range</label>
+                <input type="range" id="price-range" min="0" max="10000" />
+                <div class="price-labels">
+                  <span>$0</span>
+                  <span>$10,000+</span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div id="canape" data-collection="inside" data-color="grey">
+          <ul>
+            <img
+              src="images/canapé.jpg"
+              alt="Image de Canapé"
+              class="imgproduit"
+            />
+            <li class="namefiltre">Coombes</li>
+            <li class="filtres">LOUNGE</li>
+            <li>★ ★ ★ ★ ☆</li>
+            <li class="prix">$2,600</li>
+            <li>
+              <a href=""><img src="images/add cart.png" class="addcart" /></a>
+            </li>
+          </ul>
+        </div>
+        <div id="table" data-collection="inside" data-color="white">
+          <ul>
+            <img
+              src="images/table.jpg"
+              alt="Image de table"
+              class="imgproduit"
+            />
+            <li class="namefiltre">Keeve Set</li>
+            <li class="filtres">TABLE & CHAIRS</li>
+            <li>★ ★ ★ ★ ☆</li>
+            <li class="prix">$590</li>
+            <li>
+              <a href=""><img src="images/add cart.png" class="addcart" /></a>
+            </li>
+          </ul>
+        </div>
+        <div id="chaise" data-collection="outside" data-color="yellow">
+          <ul>
+            <img
+              src="images/chaise.jpg"
+              alt="Image de chaise"
+              class="imgproduit"
+            />
+            <li class="namefiltre">Nillè</li>
+            <li class="filtres">ARMCHAIR</li>
+            <li>★ ★ ★ ★ ★</li>
+            <li class="prix">$950</li>
+            <li>
+              <a href=""><img src="images/add cart.png" class="addcart" /></a>
+            </li>
+          </ul>
+        </div>
+        <div id="table-blanche" data-collection="inside" data-color="white">
+          <ul>
+            <img
+              src="images/table blanche.webp"
+              alt="Image de table blanche"
+              class="imgproduit"
+            />
+            <li class="namefiltre">Blanko</li>
+            <li class="filtres">SIDE TABLE</li>
+            <li>★ ★ ★ ★ ☆</li>
+            <li class="prix">$90</li>
+            <li>
+              <a href=""><img src="images/add cart.png" class="addcart" /></a>
+            </li>
+          </ul>
+        </div>
+        <div id="bibliotheque" data-collection="inside" data-color="brown">
+          <ul>
+            <img
+              src="images/bibliotheque.jpg"
+              alt="Image de bibliotheque"
+              class="imgproduit"
+            />
+            <li class="namefiltre">Momo</li>
+            <li class="filtres">SHELVES</li>
+            <li>★ ★ ★ ★ ☆</li>
+            <li class="prix">$890</li>
+            <li>
+              <a href=""><img src="images/add cart.png" class="addcart" /></a>
+            </li>
+          </ul>
+        </div>
+        <div id="chaise2" data-collection="inside" data-color="white">
+          <ul>
+            <img
+              src="images/chaise blanche.webp"
+              alt="Image de chaise blanche"
+              class="imgproduit"
+            />
+            <li class="namefiltre">Penemillè</li>
+            <li class="filtres">CHAIR</li>
+            <li>★ ★ ★ ★ ☆</li>
+            <li class="prix">$120</li>
+            <li>
+              <a href=""><img src="images/add cart.png" class="addcart" /></a>
+            </li>
+          </ul>
+        </div>
+        <div id="meuble" data-collection="inside" data-color="brown">
+          <ul>
+            <img
+              src="images/meuble.jpg"
+              alt="Image de meuble"
+              class="imgproduit"
+            />
+            <li class="namefiltre">Kappu</li>
+            <li class="filtres">SHELVES</li>
+            <li>★ ★ ★ ★ ☆</li>
+            <li class="prix">$420</li>
+            <li>
+              <a href=""><img src="images/add cart.png" class="addcart" /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="pagination">
+        <a class="active" href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">7</a>
+        <a href="#">8</a>
+        <a href="#">9</a>
+        <a href="#">10</a>
+        <a href="#">&gt;</a>
+      </div>
+    </footer>
+    <script src="rush2.js"></script>
+  </body>
+</html>
